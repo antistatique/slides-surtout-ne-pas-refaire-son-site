@@ -93,7 +93,7 @@ Nous avons cette approche, pour une agence immobilière par exemple, de dévelop
 Les meilleures sites sortent quand la technique, le visuel, les interactions et le marketing ont travaillé en étroite collaboration. C'est aussi le cas pour le SEO.
 
 ### Surtout ne pas refaire son site… Sans prendre grand soin de son référencement
-5. Avant, pendant, après… coutez ce qui se passe avec attention :
+5. Avant, pendant, après… écoutez ce qui se passe avec attention :
 -> Avec les indicateurs de performance et les chemins critiques vous savez où atterrissent vos visiteurs et d'où ils repartent. Évidemment que lors d'une refonte il est primordial de rediriger tout ce petit monde au bon endroit.
 -> Long tail… ne vous préoccupez pas uniquement des redirections des 100 pages les plus visitées si vous en avez 600, préoccupez-vous aussi et surtout des pages visitées par les utilisateurs qui atteignent vos objectifs de performance !
 -> Analysez avec beaucoup d'attention les pages de sorties, et tous les types d'erreur 404.
