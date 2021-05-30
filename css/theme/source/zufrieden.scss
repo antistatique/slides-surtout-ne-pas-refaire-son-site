@@ -1,0 +1,144 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@font-face {
+  font-family: 'Fragen';
+  src: url('fonts/Fragen Extra Bold Italic.woff2') format('woff2');
+  font-style:   italic;
+  font-weight:  600;
+}
+@font-face {
+  font-family: 'Fragen';
+  src: url('fonts/Fragen Extra Bold.woff2') format('woff2');
+  font-style:   normal;
+  font-weight:  600;
+}		
+// Include theme-specific fonts
+@font-face {
+  font-family: 'Regola';
+  src: url('fonts/RegolaPro-Book.woff2') format('woff2');
+  font-style:   normal;
+  font-weight:  300;
+}
+@font-face {
+  font-family: 'Regola';
+  src: url('fonts/RegolaPro-Bold.woff2') format('woff2');
+  font-style:   normal;
+  font-weight:  bold;
+}		
+
+/*
+#000132
+#FF0099 Magenta
+#FFF618 Limonade
+#570039 Balsamique
+#FF7495 Flamant rose
+#000032 Minuit
+#4D4D70 Sensei
+#808098 Ninja
+*/
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Regola',-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+$mainColor: #000132;
+$headingFont: 'Fragen', Andale Mono, serif;
+$headingColor: #000132;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #ffffff;
+$linkColor: #FF0099;
+$linkColorHover: #FF7495;
+$selectionBackgroundColor: #FFF618;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#FF0099);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+
+#logo_antistatique_intro{
+  width: 20vw;
+  height: auto;
+}
+.intro{
+  padding-top:0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.profile-card{
+  display: flex;
+  img{
+    width:3em;
+    height: 3em;
+    margin-right:0.5em;
+  }
+  p{
+    text-align:left;
+  }
+}
+
+mark{
+  position: relative;
+  background-color: transparent;
+}
+
+mark:before{
+  content: "";
+  background-color: pink;
+  width: 100%;
+  height: 1em;
+  position: absolute;
+  z-index: -1;
+  filter: url(#marker-shape);
+  left: -0.15em;
+  top: 0.1em;
+  padding: 0 0.15em;
+}
+
+h1>span, h2>span{
+  color: $linkColor;
+  font-style: italic;
+}
+
+// .star-background{
+//   animation:spin 12s linear infinite;
+// }
+// 
+// @keyframes spin{
+//   from{transform:rotate(0deg)}
+//   to{transform:rotate(360deg)}	
+// }
+
+.slides section.has-dark-background,
+.slides section.has-dark-background h1,
+.slides section.has-dark-background h2,
+.slides section.has-dark-background h3,
+.slides section.has-dark-background h4,
+.slides section.has-dark-background h5,
+.slides section.has-dark-background h6 {
+  color: $backgroundColor;
+  >span{
+    color:$linkColorHover;
+  }
+}
+
+
